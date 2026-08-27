@@ -1,0 +1,9 @@
+[project]
+name = "deskmate"
+version = "0.1.0"
+description = "사내 문서를 넣으면 답을 찾아 주는 작은 검색 서비스. 이 책의 과제 코드베이스"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]

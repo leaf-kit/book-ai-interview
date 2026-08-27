@@ -1,0 +1,5 @@
+cache miss query='환불' chunks=15
+top1 policy#14
+--- 개정 공지를 넣었다 ---
+cache hit query='환불' chunks=33
+top1 policy#14

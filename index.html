@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>채용을 위한 AI 엔지니어 기술 면접 노트</title>
+<meta name="author" content="리프 메타 (leaf meta)">
+<meta name="description" content="외운 답과 해 본 답을 가르는 61가지 질문. 받은 답변, 빈자리, 파고든 뒤의 답변, 판정 기준까지 그대로 담은 면접관용 노트. 마크다운을 그대로 읽는 뷰어.">
+<meta property="og:type" content="book">
+<meta property="og:title" content="채용을 위한 AI 엔지니어 기술 면접 노트">
+<meta property="og:description" content="모르는 사람은 티가 나는데, 읽고 온 사람은 해 본 사람과 똑같이 말한다. 질문 61개로 가려내는 법.">
+<meta property="og:image" content="images/cover-wide.png">
+<link rel="icon" href="images/cover-front-2edition.png">
+<link rel="stylesheet" href="viewer/app.css">
+<script>
+  // 스타일시트보다 먼저 밝기와 글자 크기를 정한다. 첫 화면이 번쩍이지 않게 하려는 것이다.
+  try {
+    var t = JSON.parse(localStorage.getItem('aiinterview.theme') || 'null');
+    if (!t) t = 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    var f = JSON.parse(localStorage.getItem('aiinterview.fs') || 'null');
+    if (f) document.documentElement.style.setProperty('--fs', f + 'px');
+    var w = JSON.parse(localStorage.getItem('aiinterview.width') || 'null');
+    var ws = { narrow: '680px', normal: '840px', wide: '1080px', full: 'none' };
+    if (w && ws[w]) document.documentElement.style.setProperty('--paper-w', ws[w]);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <button id="menu" class="icon-btn only-narrow" aria-label="차례 열기" aria-expanded="false">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+  </button>
+
+  <a class="mark" href="#/README.md" aria-label="처음으로">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="3"/>
+      <path d="M8 8h8M8 12h8M8 16h5"/>
+    </svg>
+  </a>
+
+  <div class="titles">
+    <h1>채용을 위한 AI 엔지니어 기술 면접 노트</h1>
+    <p>외운 답과 해 본 답을 가르는 61가지 질문</p>
+  </div>
+
+  <div class="tools">
+    <button id="width" class="icon-btn with-label" aria-label="본문 너비 바꾸기" title="본문 너비 (W)">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 5v14M21 5v14M7.5 12h9M7.5 12l3-3M7.5 12l3 3M16.5 12l-3-3M16.5 12l-3 3"/>
+      </svg>
+      <span id="width-label">넓게</span>
+    </button>
+    <div class="fontsize" role="group" aria-label="글자 크기">
+      <button id="font-down" class="icon-btn" aria-label="글자 작게">A−</button>
+      <button id="font-up" class="icon-btn" aria-label="글자 크게">A+</button>
+    </div>
+    <button id="theme" class="icon-btn" aria-label="밝기 바꾸기" title="밝기 바꾸기 (T)">
+      <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+    </button>
+    <a class="btn" id="gh-section" href="https://github.com/leaf-kit/book-ai-interview" target="_blank" rel="noopener">깃허브에서 보기</a>
+    <div class="star">
+      <a class="star-act" href="https://github.com/leaf-kit/book-ai-interview" target="_blank" rel="noopener"
+         title="깃허브에서 이 저장소에 별 주기">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4l2.65 5.37 5.93.86-4.29 4.18 1.01 5.9L12 16.92l-5.3 2.79 1.01-5.9L3.42 9.63l5.93-.86z"/></svg>
+        <span>Star</span>
+      </a>
+      <a class="star-n" id="star-n" href="https://github.com/leaf-kit/book-ai-interview"
+         target="_blank" rel="noopener" hidden></a>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <div id="scrim" hidden></div>
+
+  <aside id="sidebar" aria-label="차례">
+    <div class="side-search">
+      <label class="field">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5"/><path d="M13.5 13.5 17 17"/></svg>
+        <input id="q" type="search" placeholder="절 제목 검색  ( / )" autocomplete="off"
+               aria-label="절 제목 검색" enterkeyhint="search">
+        <button id="q-clear" class="icon-btn" aria-label="검색어 지우기" hidden>×</button>
+      </label>
+      <button id="fulltext" class="wide-btn" hidden>본문 전체에서 “<span></span>” 찾기</button>
+      <p id="q-hint" class="hint" hidden></p>
+    </div>
+    <nav id="toc" class="toc"><p class="loading">차례를 읽는 중…</p></nav>
+    <div class="side-foot">
+      <button id="reset-read" class="link-btn">읽은 표시 초기화</button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div class="progress" aria-hidden="true"><i id="progressbar"></i></div>
+    <div class="paper">
+      <article id="doc" class="md"><p class="loading">여는 중…</p></article>
+      <nav class="pager" id="pager" hidden>
+        <a class="pg prev" id="pg-prev" rel="prev"><span class="dir">← 이전</span><span class="t"></span></a>
+        <a class="pg next" id="pg-next" rel="next"><span class="dir">다음 →</span><span class="t"></span></a>
+      </nav>
+    </div>
+    <button id="totop" class="totop" aria-label="맨 위로" hidden>↑</button>
+  </main>
+
+  <aside id="minitoc" aria-label="이 절의 소제목">
+    <p class="minitoc-h">이 절 안에서</p>
+    <nav></nav>
+  </aside>
+</div>
+
+<footer class="bottombar">
+  <span>질문 61개, 18장. 답변을 결정의 묶음으로 보고, 버린 선택지를 물어 외운 답과 해 본 답을 가른다.</span>
+  <span class="keys">←, → 이전 다음 절 &nbsp; / 검색 &nbsp; W 너비 &nbsp; T 밝기</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+<script src="viewer/app.js"></script>
+</body>
+</html>

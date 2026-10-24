@@ -10,11 +10,11 @@
 썼다고 답해요. 가르는 건 그 경험의 유무가 아니라 밀도입니다. 실패를 몇 번 봤고, 그중
 몇 번을 고쳤고, 고친 다음 숫자가 어떻게 움직였는지.
 
-![roundflow 도식](../images/G17-closing-fig86.jpg)
+![roundflow 도식](../images/G17-d1.jpg)
 
 에이전트 자리에서 자주 들리는 말과 그때 물을 자리를 짝으로 세우면 이렇게 됩니다.
 
-![pairmap 도식](../images/G17-closing-fig87.jpg)
+![pairmap 도식](../images/G17-d2.jpg)
 
 > **저자의 삽질**
 >

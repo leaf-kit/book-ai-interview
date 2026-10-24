@@ -17,11 +17,11 @@
 이력서 한 장에서 어디를 먼저 보는지도 짚어 둘게요. 위에서 아래가 아니라 아래에서 위로 봅니다.
 숫자가 든 줄이 대개 아래쪽에 있거든요.
 
-![resumelens 도식](../images/G16-closing-fig81.jpg)
+![resumelens 도식](../images/G16-d1.jpg)
 
 이력서와 사람 자리에서 자주 들리는 말과 그때 물을 자리를 짝으로 세우면 이렇게 됩니다.
 
-![pairmap 도식](../images/G16-closing-fig82.jpg)
+![pairmap 도식](../images/G16-d2.jpg)
 
 > **저자의 삽질**
 >

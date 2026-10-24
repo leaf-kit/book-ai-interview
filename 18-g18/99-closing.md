@@ -54,11 +54,11 @@
 
 이 책이 지나온 여섯 단계를 한 장으로 접으면 이렇게 됩니다.
 
-![stepmap 도식](../images/G18-closing-fig93.jpg)
+![stepmap 도식](../images/G18-d1.jpg)
 
 그리고 마지막 판단은 눈금 하나로 적습니다. 어디까지 맡길지가 그 눈금이에요.
 
-![trustdial 도식](../images/G18-closing-fig94.jpg)
+![trustdial 도식](../images/G18-d2.jpg)
 
 여기까지가 예순한 칸입니다. 마지막으로 한 가지만 짚고 닫겠습니다.
 

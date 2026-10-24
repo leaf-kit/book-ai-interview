@@ -4,11 +4,11 @@
 
 이 관문에서 만든 것을 짝으로 세우면 이렇게 됩니다.
 
-![roundflow 도식](../images/G06-closing-fig31.jpg)
+![roundflow 도식](../images/G06-d1.jpg)
 
 이 관문에서 만든 것을 짝으로 세우면 이렇게 됩니다.
 
-![pairmap 도식](../images/G06-closing-fig32.jpg)
+![pairmap 도식](../images/G06-d2.jpg)
 
 2단계가 여기서 끝납니다. 1단계에서 답을 듣는 귀를 만들었고, 2단계에서 질문을 손봤어요.
 두 단계를 지나고 나면 면접이 좀 조용해집니다. 질문 수가 줄고 한 질문에 머무는 시간이 늘거든요.

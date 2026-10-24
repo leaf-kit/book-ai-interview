@@ -14,11 +14,11 @@
 평가 답변에서 자주 들리는 말과 그때 물을 자리를 짝으로 세우면 이렇게 됩니다.
 왼쪽 넷은 다 통과되는 문장이고, 오른쪽을 한 번씩만 물으면 그 자리에서 갈려요.
 
-![claimline 도식](../images/G13-closing-fig66.jpg)
+![claimline 도식](../images/G13-d1.jpg)
 
 평가 답변에서 자주 들리는 말과 그때 물을 자리를 짝으로 세우면 이렇게 됩니다.
 
-![pairmap 도식](../images/G13-closing-fig67.jpg)
+![pairmap 도식](../images/G13-d2.jpg)
 
 > **저자의 삽질**
 >

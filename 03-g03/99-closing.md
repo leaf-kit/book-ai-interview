@@ -4,11 +4,11 @@
 
 훑는 순서를 한 줄로 접으면 이렇게 됩니다. 위에서 아래로 30초입니다.
 
-![roundflow 도식](../images/G03-closing-fig16.jpg)
+![roundflow 도식](../images/G03-d1.jpg)
 
 그리고 훑고 나서 손에 남는 것은 이런 모양입니다. 왼쪽이 들린 것이고 오른쪽이 안 들린 것이에요.
 
-![answerbox 도식](../images/G03-closing-fig17.jpg)
+![answerbox 도식](../images/G03-d2.jpg)
 
 이 장에서 한 일은 속도를 붙인 겁니다. 잣대는 앞에서 다 만들었고,
 여기서는 그 잣대를 답이 끝나기 전에 대 보는 연습만 했어요.

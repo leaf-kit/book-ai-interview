@@ -512,8 +512,9 @@ html[data-theme="dark"] .hero-cover { box-shadow: 0 6px 22px rgba(0, 0, 0, .45);
 
 .md hr { margin: 2.4em 0; border: 0; border-top: 1px solid var(--rule); }
 
-.md img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
-.md p > img { margin: .4em 0 1.1em; }
+.md img { max-width: min(100%, 440px); height: auto; border-radius: 8px; display: block;
+          margin-left: auto; margin-right: auto; }
+.md p > img { margin: .4em auto 1.1em; }
 
 .md code {
   font-family: var(--mono);
